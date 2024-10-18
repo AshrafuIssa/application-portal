@@ -1,0 +1,27 @@
+/* Container for the entire application center */
+.application-center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;           /* Center the content horizontally */
+    padding: 40px;                 /* Add space around the container */     /* Light background color */
+    min-height: 100vh;             /* Ensure the container takes full height of the viewport */
+}
+
+/* Title style */
+.application-center-container h3 {
+    font-size: 2rem;               /* Large heading */
+    color: #34495e;                /* Dark blue-gray color */
+    margin-bottom: 30px;           /* Space below the heading */
+    text-align: center;            /* Center the heading */
+    font-weight: bold;             /* Make the heading bold */
+    letter-spacing: 1px;           /* Slightly spaced out letters */
+}
+
+/* Ensure the ApplicationCard component also stays centered */
+.application-card-container {
+    display: flex;
+    justify-content: center;       /* Center the cards within the container */
+    flex-wrap: wrap;               /* Allow cards to wrap if needed */
+    gap: 20px;                     /* Space between cards */
+    width: 100%;                   /* Make sure the container takes full width */
+}

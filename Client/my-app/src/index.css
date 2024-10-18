@@ -1,0 +1,12 @@
+/* Apply to HTML and body to ensure the full page height */
+html, body {
+  height: 100%;           /* 100% height to ensure the root container fills the screen */
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;  /* Arrange content in a column layout */
+  min-height: 100vh;       /* Ensure the root takes the full viewport height */
+}

@@ -1,0 +1,46 @@
+/* Footer container styles */
+.footer-container {
+    background-color: #3c556e;    /* Dark background for contrast */
+    color: white;                 /* White text for contrast */
+    padding: 20px;                /* Padding for spacing */
+    display: flex;                /* Flexbox for alignment */
+    flex-direction: column;        /* Stack items vertically */
+    align-items: center;          /* Center items horizontally */
+    justify-content: center;      /* Center items vertically */
+    position: relative;           /* Position relative for flexibility */
+    bottom: 0;                    /* Stick to the bottom */
+    width: 100%;                  /* Full width of the page */
+    margin-top: 40px;             /* Space between footer and main content */
+    font-family: Arial, sans-serif; /* Clean font */
+    border-top: 1px solid #7f8c8d; /* Subtle border at the top */
+}
+
+/* Individual contact item styles */
+.contact-item {
+    display: flex;                /* Align icon and text in one row */
+    align-items: center;          /* Center items vertically */
+    font-size: 18px;              /* Increase font size for readability */
+    margin: 5px 0;               /* Space between each contact item */
+}
+
+/* Styling for icons */
+.icon, a{
+    margin-right: 10px;          /* Space between icon and text */
+    font-size: 20px;              /* Larger icon for better visibility */
+    color: #1abc9c;               /* Light teal color for icons */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 10px;           /* Less padding on smaller screens */
+    }
+
+    .contact-item {
+        font-size: 16px;         /* Slightly smaller text on mobile */
+    }
+
+    .icon {
+        font-size: 20px;         /* Slightly smaller icons on mobile */
+    }
+}

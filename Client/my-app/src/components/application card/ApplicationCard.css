@@ -1,0 +1,53 @@
+/* Container for the application cards */
+.application-card-container {
+    display: flex;                 /* Align the cards in a row */
+    justify-content: space-around; /* Evenly distribute the space between cards */
+    padding: 20px;                 /* Add padding around the container */
+    gap: 20px;                     /* Space between the cards */
+    flex-wrap: wrap;               /* Wrap the cards if the screen is too narrow */
+}
+
+/* Individual card styles */
+.application-card {
+    background-color: #f4f4f4;     /* Light grey background for cards */
+    border-radius: 10px;           /* Rounded corners for the cards */
+    padding: 20px;                 /* Padding inside the card */
+    width: 250px;                  /* Set a fixed width for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    text-align: center;            /* Center the text inside the card */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    cursor: pointer;
+}
+
+/* Heading for the card */
+.application-card h3 {
+    font-size: 1.5rem;             /* Slightly larger heading */
+    color: #2c3e50;                /* Dark color for the heading */
+    margin-bottom: 10px;           /* Space below the heading */
+}
+
+/* Text inside the card */
+.application-card p {
+    font-size: 1rem;               /* Standard font size for the paragraph */
+    color: #7f8c8d;                /* Muted grey for the paragraph text */
+}
+
+/* Hover effect for the card */
+.application-card:hover {
+    background-color: #ddf0fc;
+    transform: translateY(-10px);  /* Lift the card slightly when hovered */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .application-card-container {
+        flex-direction: column;    /* Stack the cards vertically on smaller screens */
+        align-items: center;       /* Center the stacked cards */
+    }
+
+    .application-card {
+        width: 100%;               /* Full width for each card on smaller screens */
+        margin-bottom: 20px;       /* Space between stacked cards */
+    }
+}
