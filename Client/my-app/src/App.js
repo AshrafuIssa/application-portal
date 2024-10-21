@@ -1,6 +1,6 @@
 import React from 'react'
-import ScrollToTop from './components/ScrollToTop'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/home/Home'
 import ApplicationCenter from './pages/application center/ApplicationCenter'
 import GraduateForm from './pages/graduate form/GraduateForm'
