@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollToTop from './components/ScrollToTop'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/home/Home'
 import ApplicationCenter from './pages/application center/ApplicationCenter'
@@ -13,7 +14,8 @@ import './App.css'
 function App() {
   return(
     <div id='root'>
-    <Router>
+    <Router basename='/application-portal'>
+      <ScrollToTop />
       <div className='main-content'>
       <Header/>
       <Routes>
