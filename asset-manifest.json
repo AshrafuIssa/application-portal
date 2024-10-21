@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/application-portal/static/css/main.c8db537b.css",
-    "main.js": "/application-portal/static/js/main.984f22c8.js",
+    "main.js": "/application-portal/static/js/main.5cef420d.js",
     "static/media/img2_3_01.jpg": "/application-portal/static/media/img2_3_01.9e94e45a0f5fbd13c7ed.jpg",
     "static/media/kdu.jpeg": "/application-portal/static/media/kdu.30c7120b360ffe50a3c4.jpeg",
     "index.html": "/application-portal/index.html",
     "main.c8db537b.css.map": "/application-portal/static/css/main.c8db537b.css.map",
-    "main.984f22c8.js.map": "/application-portal/static/js/main.984f22c8.js.map"
+    "main.5cef420d.js.map": "/application-portal/static/js/main.5cef420d.js.map"
   },
   "entrypoints": [
     "static/css/main.c8db537b.css",
-    "static/js/main.984f22c8.js"
+    "static/js/main.5cef420d.js"
   ]
 }
