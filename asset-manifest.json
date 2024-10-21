@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/your-repo/static/css/main.c8db537b.css",
-    "main.js": "/your-repo/static/js/main.a55d0461.js",
-    "index.html": "/your-repo/index.html",
-    "main.c8db537b.css.map": "/your-repo/static/css/main.c8db537b.css.map",
-    "main.a55d0461.js.map": "/your-repo/static/js/main.a55d0461.js.map"
+    "main.css": "/application-portal/static/css/main.c8db537b.css",
+    "main.js": "/application-portal/static/js/main.a55d0461.js",
+    "index.html": "/application-portal/index.html",
+    "main.c8db537b.css.map": "/application-portal/static/css/main.c8db537b.css.map",
+    "main.a55d0461.js.map": "/application-portal/static/js/main.a55d0461.js.map"
   },
   "entrypoints": [
     "static/css/main.c8db537b.css",
