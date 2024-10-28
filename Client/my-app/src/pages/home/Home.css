@@ -1,6 +1,8 @@
-p{
+.p-top{
     margin-top: 20px;
     text-align: center;
+    font-family: "Poppins";
+    font-size: smaller;
 }
 
 

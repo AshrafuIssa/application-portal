@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
+import { toast, ToastContainer } from 'react-toastify';
 import './EapForm.css';
 
 const EapForm = () => {
@@ -22,10 +23,46 @@ const EapForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     console.log('Form Data: ', formData);
-    // Add form submission logic here
+    
+    try{
+      const response = await fetch('http://localhost:5000/eap/eapData', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+
+      if(!response.ok){
+        throw new Error('Network response was not ok')
+      }
+
+      const data = await response.json()
+      toast.success(data.message, {
+        position: 'top-right', // Position at the top-right corner
+        autoClose: 19000, // Auto close after 5 seconds
+        hideProgressBar: false, // Show progress bar
+        closeOnClick: true, // Allow close on click
+        pauseOnHover: true, // Pause the toast when hovered
+        draggable: true, // Allow dragging the toast
+    });
+
+    }
+    catch(error){
+      console.error('Error while submiting the form', error )
+
+      toast.error('Error: ' + error.message, {
+        position: 'top-right', // Position at the top-right corner
+        autoClose: 19000, // Auto close after 5 seconds
+        hideProgressBar: false, 
+        closeOnClick: true, 
+        pauseOnHover: true,
+        draggable: true,
+    });
+    }
   };
 
   return (
@@ -207,6 +244,7 @@ const EapForm = () => {
           </Link>
         </div>
       </form>
+      <ToastContainer />
     </div>
     </div>
   );

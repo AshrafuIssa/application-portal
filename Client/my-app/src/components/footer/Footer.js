@@ -1,23 +1,28 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import './Footer.css'; 
+import Logo from '../../images/4.jpg'
+import './Footer.css';
 
-const Footer = () => {
-  return (
-    <footer className="footer-container">
-      <h4 className="footer-heading">Contact Us</h4> 
-      <div className="contact-item">
-        <FontAwesomeIcon icon={faEnvelope} className="icon" />
-        <span>Email: <a href="mailto:jcw@ku-ac.com">jcw@ku-ac.com</a></span>
-      </div>
-      <div className="contact-item">
-        <FontAwesomeIcon icon={faWhatsapp} className="icon" />
-        <span>WhatsApp: <a href="https://wa.me/821075999627">+82 1075999627</a></span>
-      </div>
-    </footer>
-  );
+function Footer() {
+    return (
+        <footer className="footer">
+          <div className='footer-image'>
+            <img src= {Logo} alt='logo-image'/>
+          </div>
+            <div className='footer-data'>
+            <div className="footer-info">
+                <p>KUAC Business Registration No: 130-86-78730</p>
+                <p>E-mail: <a href="mailto:info@ku-ac.com">info@ku-ac.com</a></p>
+            </div>
+            <div className="footer-address">
+                <p>ADDRESS: 2002-ho, Jungdong Benesta, 252, Gilju-ro, Bucheon-si, Gyeonggi-do, Republic of Korea</p>
+                <p>TEL: 032-323-9652 | FAX: 032-323-9653 | WHATSAPP: +82 10-7599-9627</p>
+            </div>
+            <div className="footer-copyright">
+                <p>COPYRIGHT ⓒ 2018 KUAC ALL RIGHTS RESERVED</p>
+            </div>
+            </div>
+        </footer>
+    );
 }
 
 export default Footer;

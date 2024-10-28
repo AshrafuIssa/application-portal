@@ -6,9 +6,9 @@ import './Home.css';
 function Home() {
   return (
     <div className='home-container'>
-      <p>Welcome to KUAC (KOREAN UNIVERSITIES ADMISSION CENTER) Admission Application Forms<br/>Before continuing with the application please download and take a look on the following documents.</p>
-      <DocumentCard />
+      <p className='p-top'>Welcome to KUAC (KOREAN UNIVERSITIES ADMISSION CENTER) Admission Application Forms<br/>Before continuing with the application please download and take a look on the following documents.<br/><br/>If you have the documents already, please click the button below to start applications</p>
       <StartApplicationButton />
+      <DocumentCard />
     </div>
   );
 }

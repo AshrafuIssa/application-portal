@@ -3,6 +3,7 @@ import './DocumentCard.css'; // Import the CSS file
 
 const DocumentCard = () => {
   return (
+    <div className='page-container'>
     <div className="document-container">
       <a href="https://drive.google.com/file/d/1HVhjK39gWVhw2WZu7sL2wImXZe05CGym/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="card-link">
         <div className="card">
@@ -53,6 +54,8 @@ const DocumentCard = () => {
         </div>
       </a>
     </div>
+
+  </div>
   );
 }
 

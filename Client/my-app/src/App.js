@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/home/Home'
 import ApplicationCenter from './pages/application center/ApplicationCenter'
@@ -27,6 +29,17 @@ function App() {
         <Route path='/eapForm' element = {<EapForm />} />      </Routes>
       </div>
       <Footer />
+      <ToastContainer 
+        position='top-right'
+        autoClose={19000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover
+      />
     </Router>
     </div>
   )

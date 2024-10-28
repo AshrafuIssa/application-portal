@@ -6,17 +6,22 @@ import './Header.css';
 
 function Header() {
     return (
+        <div className='main-div'>
         <header className="header">
             <Link to='/' className="logo-container left-logo">
                 <img src={kuac} alt="Left Logo" className="logo" />
             </Link>
-            <div className='headings-container'>
-            <h2 className="header-title">ADMISSION APPLICATION FORMS<br/>APPLY NOW!!</h2>
-            </div>
+            
             <Link to='/' className="logo-container right-logo">
                 <img src={kdu} alt="Right Logo" className="logo" />
             </Link>
+
         </header>
+        
+        <div className='headings-container'>
+            <h2 className="header-title">ADMISSION APPLICATION FORMS<br/>APPLY NOW!!</h2>
+            </div>
+        </div>
     );
 }
 

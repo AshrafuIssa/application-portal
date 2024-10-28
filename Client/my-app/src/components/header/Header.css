@@ -1,23 +1,32 @@
+.main-div{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    background-image: url('../../images/2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f0f0f0; /* Header background color */
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    padding: 20px; 
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
 .logo-container {
     width: 200px;
-    mix-blend-mode: multiply;
+    border-radius: 20px;
 }
 
 .logo {
     width: 100%;
     height: auto;
-    background-color: #f0f0f0; /* Image background same as header */
+    mix-blend-mode: multiply;
 }
 
 .headings-container {
@@ -26,7 +35,6 @@
     align-items: center;
     justify-content: center;
     text-align: center; /* Center the text */
-    flex-grow: 1; /* Make the container take up the remaining space */
     padding: 0 20px;
 }
 
@@ -34,13 +42,11 @@
     font-size: 24px;
     color: black;
     text-transform: uppercase;
-    margin: 0;
 }
 
 .headings-container p {
     font-size: 14px;
     color: #333;
-    margin-top: 10px;
     line-height: 1.5;
     max-width: 600px;
 }
