@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/application-portal/static/css/main.261b70f4.css",
-    "main.js": "/application-portal/static/js/main.5a5b2f15.js",
+    "main.css": "/application-portal/static/css/main.945296aa.css",
+    "main.js": "/application-portal/static/js/main.95c5864e.js",
     "static/media/img2_3_01.jpg": "/application-portal/static/media/img2_3_01.9e94e45a0f5fbd13c7ed.jpg",
+    "static/media/2.jpg": "/application-portal/static/media/2.41d491fa4b05b27c8853.jpg",
     "static/media/kdu.jpeg": "/application-portal/static/media/kdu.30c7120b360ffe50a3c4.jpeg",
     "index.html": "/application-portal/index.html",
-    "main.261b70f4.css.map": "/application-portal/static/css/main.261b70f4.css.map",
-    "main.5a5b2f15.js.map": "/application-portal/static/js/main.5a5b2f15.js.map"
+    "main.945296aa.css.map": "/application-portal/static/css/main.945296aa.css.map",
+    "main.95c5864e.js.map": "/application-portal/static/js/main.95c5864e.js.map"
   },
   "entrypoints": [
-    "static/css/main.261b70f4.css",
-    "static/js/main.5a5b2f15.js"
+    "static/css/main.945296aa.css",
+    "static/js/main.95c5864e.js"
   ]
 }
